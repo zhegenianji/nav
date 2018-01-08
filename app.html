@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="mackdown.css">
+    <script src="vue.js"></script>
+    <script src="vue-router.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
+</head>
+<style>
+    .slide-fade-enter-active {
+        transition: all .3s ease;
+    }
+    .slide-fade-leave-active {
+        transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    }
+    .slide-fade-enter, .slide-fade-leave-to {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+</style>
+<body>
+    <div id="box">
+        <nav>
+            <router-link to="/">文档</router-link>
+            <router-link to="/quick">入手</router-link>
+        </nav>
+        <transition name="slide-fade" mode="out-in">
+        <router-view></router-view>
+        </transition>
+    </div>
+</body>
+<script src="components.js"></script>
+<script src="router.js"></script>
+<script src="app.js"></script>
+</html>

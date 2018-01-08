@@ -1,0 +1,42 @@
+*{
+
+    box-sizing: border-box;
+}
+body{
+    padding: 0;margin:0;
+    width: 100vw;height: 100vh;
+    border: 1px solid red;
+    overflow: hidden;
+}
+.box{
+    width: 100vw;height: 100vh;
+}
+nav{
+    width: 100%;height: 40px;
+    background: #ccc;
+    text-align: center;
+    line-height: 40px;
+    position: fixed;
+}
+section{
+    width: 100%;height: 100%;
+    padding-top: 40px;
+}
+.left{
+    width: 25%;height: 100%;
+    border-right: 2px solid #000000;
+    float: left;
+}
+.right{
+    width: 75%;height: 100%;
+    float: left;
+    overflow: scroll;
+}
+.markdown-body{
+    position: relative;
+}
+.quick{
+    width: 100%;
+    height: 100px;
+    padding-top: 40px;
+}
